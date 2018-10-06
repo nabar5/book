@@ -6,15 +6,5 @@
 
 <a href="https://www.w3schools.com">This is a link</a>
 
-<h2>User <%= username %>'s last five gists</h2>
-<% gists.each do |g| %>
-<% g[:files].fields.each do |f| %>
-<b><%= f %></b>:
-<%= h g[:files][f.to_sym].rels[:raw].get.data %>
-<br/>
-<br/>
-<% end %>
-<% end %>
-
 </body>
 </html>
